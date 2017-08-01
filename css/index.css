@@ -1,0 +1,1024 @@
+/* ======= reset start ======= */
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #494d55;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3aa7aa;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #339597;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.btn,
+a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn .fa,
+a.btn .fa {
+    margin-right: 5px;
+}
+
+.btn-cta,
+a.btn-cta {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px;
+}
+
+.btn-primary {
+    background: #40babd;
+    border: 1px solid #40babd;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.hover {
+    background: #3aa7aa;
+    color: #fff;
+    border: 1px solid #3aa7aa;
+}
+
+
+/* ======= reset end ======= */
+
+
+/* ======= Header star ======= */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    height: 60px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+
+/*滚动事件添加菜单导航样式*/
+
+.header.header-scrolled {
+    background: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.header.header-scrolled a {
+    color: #494d55;
+}
+
+.header.header-scrolled .main-nav .nav .nav-item a {
+    color: #a2a6af;
+}
+
+.header.header-scrolled .main-nav .nav .nav-item.active a {
+    color: #494d55;
+    border-bottom: 4px solid red;
+}
+
+.header a {
+    color: #fff;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.header .logo {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.header .logo .logo-icon-wrapper {
+    margin-right: 3px;
+    position: relative;
+    display: inline-block;
+    top: -3px;
+}
+
+.header .logo .logo-icon {
+    /*width: 30px;*/
+    height: 30px;
+}
+
+
+/*.header .logo .highlight {
+  font-weight: 800;
+}*/
+
+.main-nav {
+    margin-top: 6px;
+}
+
+.main-nav .navbar-toggle {
+    margin-right: 0;
+    margin-top: 0;
+    background: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.main-nav .navbar-toggle:focus {
+    outline: none;
+}
+
+.main-nav .navbar-toggle .icon-bar {
+    background-color: #000;
+    height: 3px;
+}
+
+.main-nav .navbar-toggle:hover .icon-bar {
+    background-color: #fff;
+}
+
+.main-nav .nav .nav-item {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+}
+
+.main-nav .nav .nav-item.active a {
+    background: none;
+    color: #333;
+}
+
+.main-nav .nav .nav-item a {
+    color: #333;
+    font-weight: 700;
+}
+
+.main-nav .nav .nav-item a:hover {
+    color: #101010;
+    background: none;
+}
+
+.main-nav .nav .nav-item a:focus {
+    outline: none;
+    background: none;
+}
+
+.main-nav .nav .nav-item a:active {
+    outline: none;
+    background: none;
+}
+
+.main-nav .nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.main-nav .nav.active {
+    position: relative;
+}
+
+.nav > li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* ======= 首页 star ======= */
+
+#Home_page {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.hero-section {
+    background: #494d55;
+    position: relative;
+}
+
+.hero-carousel {
+    height: 6.9rem;
+    color: #fff;
+}
+
+.carousel-indicators {
+    bottom: 30px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.carousel-indicators li.active {
+    background-color: #f8b62b;
+    width: 11px;
+    height: 11px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.hero-carousel .carousel-inner .item {
+    height: 6.9rem;
+    background-position: center center;
+}
+
+.hero-carousel .carousel-inner .item-1 {
+    background-image: url(../img/banner1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .item-2 {
+    background-image: url(../img/banner2.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .item-3 {
+    background-image: url(../img/banner5.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .heading {
+    font-size: 0.50rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.hero-carousel .carousel-inner .intro {
+    font-size: 0.32rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 30px;
+}
+
+
+/*相邻兄弟元素*/
+
+.hero-carousel .carousel-inner .intro + .btn {
+    margin-top: 15px;
+}
+
+
+/* ======= 首页 cooperation ======= */
+
+#cooperation {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background: url(../img/cooperation.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 0.5rem;
+}
+
+#cooperation .cooperation_title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.25rem;
+    font-weight: 600;
+}
+
+#cooperation .cooperation_txt {
+    margin: 0.4rem auto;
+    width: 80%;
+    margin: 0.2rem auto 0;
+    font-size: 0.18rem;
+    line-height: 0.3rem;
+}
+
+#cooperation .cooperation_pic {
+    width: 72%;
+    margin: 0.4rem auto 0;
+    text-align: center;
+}
+
+#cooperation .cooperation_pic img {
+    width: 100%;
+    max-width: 550px;
+}
+
+#cooperation #apply {
+    width: 1.4rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    background-color: #e83828;
+    color: white;
+    text-align: center;
+    font-size: 0.16rem;
+    margin: 0.6rem auto;
+    border-radius: 0.05rem;
+    cursor: pointer;
+}
+
+
+/*申请入驻弹出框*/
+
+#cooperation .apply_form {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -2rem;
+    margin-top: -2.25rem;
+    z-index: 100;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+}
+
+#cooperation .apply_form div {
+    width: 2.8rem;
+    margin: 0.1rem auto;
+    height: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cooperation .apply_form .apply_div1 {
+    text-align: center;
+    color: red;
+    font-size: 0.2rem;
+}
+
+#cooperation .apply_form .apply_div2,
+#cooperation .apply_form .apply_div3,
+#cooperation .apply_form .apply_div4,
+#cooperation .apply_form .apply_div5,
+#cooperation .apply_form .apply_div6 {
+    text-align: center;
+    font-size: 0.15rem;
+}
+
+#cooperation .apply_form .apply_div2 input,
+#cooperation .apply_form .apply_div3 input,
+#cooperation .apply_form .apply_div4 input,
+#cooperation .apply_form .apply_div5 input,
+#cooperation .apply_form .apply_div6 input {
+    width: 2rem;
+    height: 0.35rem;
+    padding-left: 0.1rem;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#cooperation .apply_form .apply_div7 {
+    margin-top: 0.3rem;
+}
+
+#cooperation .apply_form .apply_div7 button {
+    width: 1rem;
+    height: 0.35rem;
+    text-align: center;
+    line-height: 0.35rem;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    font-size: 0.18rem;
+    border-radius: 0.05rem;
+    cursor: pointer;
+}
+
+
+/*提交成功弹框*/
+
+#cooperation .apply_formBg {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+#cooperation .apply_success {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.25rem;
+    margin-top: -1rem;
+    z-index: 101;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+}
+
+#cooperation .apply_success .apply_success_t {
+    text-align: center;
+    color: red;
+    font-size: 0.2rem;
+}
+
+#cooperation .apply_success .apply_success_c {
+    font-size: 0.15rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+#cooperation .apply_success .apply_success_btn {
+    width: 0.7rem;
+    height: 0.3rem;
+    margin-top: 0.3rem;
+    margin-left: 1.5rem;
+    text-align: center;
+    line-height: 0.3rem;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    font-size: 0.15rem;
+    border-radius: 0.05rem;
+    cursor: pointer;
+}
+
+
+/*入驻品牌*/
+
+#cooperation h6 {
+    font-size: 0.2rem;
+    text-align: center;
+    margin: 0.4rem auto;
+}
+
+#cooperation ul {
+    max-width: 10rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#cooperation ul li {
+    width: 1.5rem;
+    height: 0.75rem;
+    border: 1px solid #ccc;
+    margin: 0.1rem 0.2rem;
+    background-color: white;
+}
+
+#cooperation ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*下载*/
+
+#download {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background: url(../img/downloadBg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2.2rem;
+    position: relative;
+}
+
+#download h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.24rem;
+}
+
+#download ul {
+    width: 7rem;
+    margin: 0.7rem auto 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#download ul li {
+    width: 2.65rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#download ul li .p_img {
+    width: 80%;
+}
+
+#download ul li .p_img img {
+    width: 100%;
+    position: relative;
+}
+
+#download ul li p {
+    margin: 0 auto;
+}
+
+#download ul li .clientBtn {
+    width: 75%;
+    height: 0.4rem;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 0.17rem;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    line-height: 0.4rem;
+}
+
+#download .download_pic {
+    width: 72%;
+    margin: 1rem auto 0;
+    text-align: center;
+}
+
+#download .download_pic img {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+/*帮助中心*/
+
+#helpCenter {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background: url(../img/help_bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -3px;
+    padding-top: 0.5rem;
+}
+
+#helpCenter .pro_title {
+    font-size: 0.18rem;
+    font-weight: 600;
+}
+
+#helpCenter .pro1 ul {
+    width: 100%;
+    background-color: #f39b93;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#helpCenter .pro1 ul li {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin: 0.15rem;
+}
+
+#helpCenter .pro1 ul li .pro_l {
+    width: 0.5rem;
+}
+
+#helpCenter .pro1 ul li .pro_l img {
+    width: 100%;
+}
+
+#helpCenter .pro1 ul li .pro_r {
+    width: 88%;
+    color: white;
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+}
+
+#helpCenter .pro1 ul .notice {
+    width: 91%;
+    color: white;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+}
+
+#helpCenter .pro2 {
+    margin-top: 0.5rem;
+}
+
+#helpCenter .pro2 .pro2_content {
+    width: 100%;
+    background-color: #f39b93;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.15rem;
+    padding: 0.2rem;
+}
+
+#helpCenter .pro2 .pro2_content div {
+    line-height: 0.3rem;
+}
+
+#helpCenter .pro3 {
+    margin-top: 0.5rem;
+}
+
+#helpCenter .pro3 .pro3_content {
+    width: 100%;
+    background-color: #f39b93;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.15rem;
+    padding: 0.2rem;
+    line-height: 0.3rem;
+}
+
+#helpCenter .pro4 {
+    margin-top: 0.5rem;
+}
+
+#helpCenter .pro4 .pro4_content {
+    width: 100%;
+    background-color: #f39b93;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.15rem;
+    padding: 0.2rem;
+    line-height: 0.3rem;
+}
+
+#helpCenter .pro5 {
+    margin-top: 0.5rem;
+}
+
+#helpCenter .pro5 .pro5_content {
+    width: 100%;
+    background-color: #f39b93;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.15rem;
+    padding: 0.2rem;
+    line-height: 0.3rem;
+}
+
+
+/* ======= 联系我们 ======= */
+
+#contactUs {
+    padding-top: 0.5rem;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+#contactUs p {
+    text-align: center;
+}
+
+#contactUs .contactUs_p1 {
+    font-size: 0.28rem;
+    font-weight: 600;
+}
+
+#contactUs .contactUs_p2,
+#contactUs .contactUs_p3,
+#contactUs .contactUs_p4 {
+    font-size: 0.15rem;
+}
+
+#contactUs .contactUs_p5 {
+    width: 1.8rem;
+    margin: 0 auto;
+}
+
+#contactUs .contactUs_p5 img {
+    width: 100%;
+}
+
+#contactUs .contactUs_p6 {
+    margin-top: 0.5rem;
+}
+
+
+/*========================屏幕适配===========================*/
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  /*轮播图*/
+  .hero-carousel .carousel-inner .item-1 {
+    background-image: url(../img/banner3.jpg);
+  }
+  .hero-carousel .carousel-inner .item-2 {
+    background-image: url(../img/banner4.jpg);
+  }
+  .hero-carousel .carousel-inner .item-3 {
+    background-image: url(../img/banner6.jpg);
+  }
+  .header .logo .logo-icon {
+    height: 25px;
+  }
+  /*菜单*/
+  .navbar-collapse {
+    border-top: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 40;
+  }
+  .header {
+    height: 54px;
+  }
+  .header .logo {
+    padding-top: 9px;
+  }
+  .header .main-nav .navbar-collapse .nav-item {
+    margin: 0 auto;
+    color: white;
+  }
+  .header .main-nav .navbar-collapse .nav-item.active a {
+    color: #f8b62b;
+  }
+  .header.header-scrolled .main-nav .navbar-collapse .nav-item.active a {
+    border: none;
+    color: #f8b62b;
+  }
+  .main-nav .navbar-collapse .nav-item {
+    margin-right: 0;
+  }
+  .main-nav .navbar-collapse .nav-item a {
+    text-align: center;
+  }
+  .hero-section .figure-image {
+    width: 300px;
+  }
+  .hero-carousel .carousel-inner .heading {
+    margin: 0 auto;
+  }
+  .hero-carousel .carousel-inner .item-content-inner {
+    padding-top: 55px;
+  }
+ /* .hero-section .figure-holder .figure-image {
+    width: inherit;
+    bottom: 0;
+    top: inherit;
+    right: inherit;
+    left: 50%;
+    margin-left: -200px;
+    max-width: 320px;
+  }*/
+  #download {
+    padding-top: 1.5rem;
+  }
+  #download ul {
+    width: 5rem;
+    margin-top: 0.5rem;
+  }
+  #download ul li {
+    width: 2.5rem;
+    height: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  #download ul li .clientBtn {
+    width: 75%;
+    height: 0.4rem;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 0.22rem;
+    text-align: center;
+    cursor: pointer;
+    line-height: 0.4rem;
+  }
+  /*#cooperation #contact {
+    width: 2rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.22rem;
+    margin: 0.51rem auto;
+  }*/
+  #cooperation .apply_form {
+    width: 5rem;
+    height: 5rem;
+    margin-left: -2.5rem;
+    margin-top: -2rem;
+  }
+  #cooperation .apply_form div {
+    width: 80%;
+    height: 0.5rem;
+  }
+  #cooperation .apply_form .apply_div2,
+  #cooperation .apply_form .apply_div3,
+  #cooperation .apply_form .apply_div4,
+  #cooperation .apply_form .apply_div5,
+  #cooperation .apply_form .apply_div6 {
+    text-align: center;
+    font-size: 0.18rem;
+  }
+  #cooperation .apply_form .apply_div2 input,
+  #cooperation .apply_form .apply_div3 input,
+  #cooperation .apply_form .apply_div4 input,
+  #cooperation .apply_form .apply_div5 input,
+  #cooperation .apply_form .apply_div6 input {
+    width: 2.5rem;
+    height: 0.5rem;
+    padding-left: 0.1rem;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*.hero-section .figure-holder .figure-image {
+    width: 400px;
+    bottom: 0;
+  }*/
+  .hero-carousel .carousel-inner .item-content-inner {
+    max-width: 400px;
+    padding-top: 190px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero-section .figure-holder .figure-image {
+    width: 420px;
+    bottom: 0;
+  }
+  .hero-carousel .carousel-inner .item-content-inner {
+    max-width: 500px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero-section .figure-holder .figure-image {
+    width: 500px;
+    bottom: 0;
+    top: inherit;
+  }
+  .contentWidth {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 1100px) {
+  .contentWidth {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 560px) {
+  #download {
+    padding-top: 1.8rem;
+  }
+  #download ul {
+    width: 4rem;
+  }
+  #download ul li {
+    width: 2.8rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  #download ul li .clientBtn {
+    width: 75%;
+    height: 0.4rem;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    font-size: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+    line-height: 0.4rem;
+    margin-top: 0.5rem;
+  }
+  #helpCenter .pro_title {
+    font-size: 0.25rem;
+  }
+  #helpCenter .pro_r {
+    font-size: 0.16rem;
+  }
+}
+@media (max-width: 640px) and (min-width: 560px) {
+  #download {
+    padding-top: 1.5rem;
+  }
+  #download ul {
+    width: 4rem;
+  }
+  #download ul li {
+    width: 2.5rem;
+    height: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  #download ul li .clientBtn {
+    width: 75%;
+    height: 0.4rem;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    font-size: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+    line-height: 0.4rem;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 425px) and (min-width: 375px) {
+  #helpCenter .pro1 ul {
+    height: auto;
+  }
+  #helpCenter .pro1 ul li {
+    font-size: 0.12rem;
+  }
+  #helpCenter .pro2,
+  #helpCenter .pro3,
+  #helpCenter .pro4 {
+    font-size: 0.16rem;
+  }
+}
+@media (max-width: 500px) and (min-width: 425px) {
+  #helpCenter .pro1 ul li {
+    height: 1.3rem;
+    width: 2.5rem;
+    font-size: 0.16rem;
+  }
+  #helpCenter .pro2,
+  #helpCenter .pro3,
+  #helpCenter .pro4 {
+    font-size: 0.16rem;
+  }
+}
+@media (max-width: 375px) {
+  #helpCenter .pro1 ul {
+    height: auto;
+  }
+  #helpCenter .pro1 ul li {
+    font-size: 0.10rem;
+  }
+  #helpCenter .pro2,
+  #helpCenter .pro3,
+  #helpCenter .pro4 {
+    font-size: 0.10rem;
+  }
